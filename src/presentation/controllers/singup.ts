@@ -1,7 +1,8 @@
 import { HttpResponse, HttpRequest } from '../protocols/http'
 import { MissingParamError } from '../errors/missingParamError'
 import { badRequest } from '../helper/httpHelper'
-export class SignUpController {
+import { Controller } from '../protocols/controller'
+export class SignUpController implements Controller {
     handle (httpRequest: HttpRequest): HttpResponse {
         const requiredFileds = ['name', 'email', 'password', 'passwordConfirmation'];
         for (const field of requiredFileds) {
