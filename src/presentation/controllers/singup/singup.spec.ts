@@ -201,7 +201,6 @@ describe('SingUp Controller', () =>{
         expect(httpResponse.statusCode).toBe(500)
         expect(httpResponse.body).toEqual(new ServerError())
     })
-
     test('Should be return 200 if no account is created', async () => {
         const { sut } = makeSut();
         const httpRequest = {
