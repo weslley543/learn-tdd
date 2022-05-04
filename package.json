@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "sucrase-node src/main/server.ts",
-    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test": "jest --passWithNoTests --silent --verbose",
     "test:unit": "npm test -- --watch -c jest-unit-config.js --runInBand",
     "test:integration": "npm test -- --watch -c jest-integration-config.js --runInBand",
     "test:staged": "npm test --findRelatedTests --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
-    "test:ci": "npm test -- --coverage --runInBand"
+    "test:ci": "npm test -- --coverage"
   },
   "author": "",
   "license": "ISC",
