@@ -10,7 +10,7 @@
     "test:integration": "npm test -- --watch -c jest-integration-config.js --runInBand",
     "test:staged": "npm test --findRelatedTests --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
-    "test:ci": "npm test --coverage"
+    "test:ci": "npm test -- --coverage"
   },
   "author": "",
   "license": "ISC",
